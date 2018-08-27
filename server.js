@@ -37,7 +37,6 @@ var options = {
   database: process.env.DB_NAME || "ownflix"
 };
 
-
 var sessionStore = new MySQLStore(options);
 
 // Express-Session cookie config
@@ -89,7 +88,6 @@ passport.use(new LocalStrategy(
     })
   }
 ));
-
 
 // Handlebars
 app.engine(
