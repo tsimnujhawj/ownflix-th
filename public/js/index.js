@@ -112,13 +112,13 @@ $("#create-new-user").on("click", function(event) {
   $("#new-user-modal").css("display", "block");
 });
 
-// $("#new-user").on("click", function(event) {
-//   event.preventDefault();
-//   console.log('sanity check')
-//   //handle the 'New? Sign up now button' ie hide sign in modal
-//   $("#sign-in-modal").css("display", "none");
-//   $("#new-user-modal").css("display", "block");
-// });
+$("#new-user").on("click", function(event) {
+  event.preventDefault();
+  console.log('sanity check')
+  //handle the 'New? Sign up now button' ie hide sign in modal
+  $("#sign-in-modal").css("display", "none");
+  $("#new-user-modal").css("display", "block");
+});
 
 $('body').on('click', '#new-user', function(event) {
   event.preventDefault();
