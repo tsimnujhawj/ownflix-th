@@ -129,10 +129,10 @@ $('body').on('click', '#new-user', function () {
 });
 
 //onclick event of - send to user dashboard
-$("#submit-user").on("click", function(event) {
-  event.preventDefault();
-  window.location = "UserPage.html";
-});
+// $("#submit-user").on("click", function(event) {
+//   event.preventDefault();
+//   window.location = "UserPage.html";
+// });
 
 // when you clicka da x da modal go away
 $(".close").on("click", function(e) {
