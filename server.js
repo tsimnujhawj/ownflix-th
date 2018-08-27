@@ -29,13 +29,13 @@ var PORT = process.env.PORT || 3000;
 var saltRounds = 10;
 
 // express-mysql-sessions settings
-var options = {
-  host: process.env.DB_HOST || "localhost",
-  port: 3306,
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "root",
-  database: process.env.DB_NAME || "ownflix"
-};
+// var options = {
+//   host: process.env.DB_HOST || "localhost",
+//   port: 3306,
+//   user: process.env.DB_USER || "root",
+//   password: process.env.DB_PASSWORD || "root",
+//   database: process.env.DB_NAME || "ownflix"
+// };
 
 // if (process.env.JAWSDB_URL) {
 //   options = mysql.createConnection(process.env.JAWSDB_URL);
