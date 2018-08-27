@@ -28,8 +28,6 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 var saltRounds = 10;
 
-console.log(process.env.JAWSDB_URL + " " + process.env.DB_NAME)
-
 // express-mysql-sessions settings
 var options = {
   host: process.env.DB_HOST || "localhost",
@@ -39,17 +37,6 @@ var options = {
   database: process.env.DB_NAME || "ownflix"
 };
 
-// if (process.env.JAWSDB_URL) {
-//   options = process.env.JAWSDB_URL;
-// } else {
-//   options = mysql.createConnection({
-//     port: 3306,
-//     host: "localhost",
-//     user: "root",
-//     password: "root",
-//     database: "ownflix"
-//   });
-// }
 
 var sessionStore = new MySQLStore(options);
 
@@ -103,28 +90,6 @@ passport.use(new LocalStrategy(
   }
 ));
 
-// db.User.findAll({
-//   limit: 1,
-//   where: {
-//     email: email
-//   },
-//   order: [["createdAt", "DESC"]]
-// }).then(function(results){
-// console.log(userInfo)
-// if (err) {done(err)};
-// if (results.length === 0) {
-//   done(null, false)
-// }
-// console.log(results[0].password.toString());
-// var hash = results[0].password.toString();
-// bcrypt.compare(password, hash, function(err, response) {
-//   if (response === true) {
-//     return done(null, {userID: results[0].id})
-//   } else {
-//     return done (null, false);
-//   }
-// })
-// })
 
 // Handlebars
 app.engine(
