@@ -28,7 +28,7 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 var saltRounds = 10;
 
-console.log(process.env.JAWSDB_URL)
+console.log(process.env.JAWSDB_URL + " " + process.env.DB_NAME)
 
 // express-mysql-sessions settings
 var options = {
