@@ -27,7 +27,6 @@ var passport = require("passport");
 var app = express();
 var PORT = process.env.PORT || 3000;
 var saltRounds = 10;
-var options;
 
 console.log(process.env.JAWSDB_URL)
 
